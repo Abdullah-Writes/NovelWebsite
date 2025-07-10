@@ -13,6 +13,22 @@
       src: url(JameelNooriNastaleeqRegular.ttf) format('truetype');
     }
   </style>
+  <script src="https://www.gstatic.com/firebasejs/10.3.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.3.1/firebase-database-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.3.1/firebase-auth-compat.js"></script>
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyDyjmTD2ccDI3sT68pZ7euRuOGJQU9kZGc",
+      authDomain: "novel-website-39bc6.firebaseapp.com",
+      projectId: "novel-website-39bc6",
+      storageBucket: "novel-website-39bc6.firebasestorage.app",
+      messagingSenderId: "625649458560",
+      appId: "1:625649458560:web:b6e9d693e022f47ef3f565",
+      measurementId: "G-V6G36Z7ENM"
+    };
+      firebase.initializeApp(firebaseConfig);
+  </script>
+
 </head>
 <body>
   
@@ -48,22 +64,6 @@
     <button onclick="addComment()">Post</button>
     <div id="commentsContainer"></div>
   </div>
-  <script src="https://www.gstatic.com/firebasejs/10.3.1/firebase-app-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/10.3.1/firebase-database-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/10.3.1/firebase-auth-compat.js"></script>
-  <script>
-    const firebaseConfig = {
-      apiKey: "AIzaSyDyjmTD2ccDI3sT68pZ7euRuOGJQU9kZGc",
-      authDomain: "novel-website-39bc6.firebaseapp.com",
-      projectId: "novel-website-39bc6",
-      storageBucket: "novel-website-39bc6.firebasestorage.app",
-      messagingSenderId: "625649458560",
-      appId: "1:625649458560:web:b6e9d693e022f47ef3f565",
-      measurementId: "G-V6G36Z7ENM"
-    };
-      firebase.initializeApp(firebaseConfig);
-  </script>
-
 <!-- Footer Section -->
 
   <footer>
