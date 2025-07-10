@@ -1,0 +1,294 @@
+/* Fonts */
+
+@font-face {
+  font-family: 'JameelNoori';
+  src: url(JameelNooriNastaleeqRegular.ttf) format('truetype');
+}
+
+/* Basic CSS */
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'JameelNoori', sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+} 
+:root{
+  --main-color: hsl(34, 57%, 70%);
+  --second-color:  hsl(240, 64%, 27%);
+  --third-color: hsl(0, 0%, 96%);
+  }
+
+/* Header CSS */
+
+header{
+  width: 100%;
+  background-color: var(--main-color);
+}
+
+.title{
+  color: var(--third-color);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 30px;
+}
+
+/* Tiles CSS */
+
+.tiles-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    min-width: 80%;
+    margin: 20px;
+}
+
+.tile {
+    background: var(--main-color);
+    color: var(--second-color);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-align: center;
+}
+
+.tile:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* Episodes page CSS */
+
+.episodes-container {
+  max-width: 700px;
+  margin: 30px auto;
+  background: var(--main-color);
+  color: var(--second-color);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.episodes-container h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.episode-list {
+  list-style: none;
+}
+
+.episode-list li {
+  margin-bottom: 15px;
+}
+
+.episode-list a {
+  color: var(--second-color);
+  background: var(--third-color);
+  padding: 10px 15px;
+  border-radius: 6px;
+  display: inline-block;
+  text-decoration: none;
+  transition: background 0.3s, color 0.3s;
+}
+
+.episode-list a:hover {
+  background: var(--second-color);
+  color: var(--third-color);
+}
+#backBtn {
+  position: fixed;
+  bottom: 40px;
+  right: 30px;
+  z-index: 99;
+  background: var(--second-color);
+  color: var(--third-color);
+  padding: 12px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+#backBtn:hover {
+  background: var(--main-color);
+  color: var(--second-color);
+}
+
+.download-btn {
+  display: block;
+  max-width: 250px;
+  margin: 30px auto;
+  background: var(--second-color);
+  color: var(--third-color);
+  padding: 12px 20px;
+  text-align: center;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 18px;
+  transition: background 0.3s;
+}
+
+.download-btn:hover {
+  background: var(--main-color);
+  color: var(--second-color);
+}
+
+
+/* Comments Section CSS */
+
+.comment-section {
+  min-width: 95%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  background: var(--main-color);
+  color: var(--second-color);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+textarea {
+  width: 100%;
+  height: 80px;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 2px solid var(--second-color);
+}
+
+button {
+  padding: 10px 16px;
+  background: var(--third-color);
+  color: var(--second-color);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: var(--second-color);
+  color: var(--third-color);
+}
+
+.comment {
+  background: var(--main-color);
+  padding: 12px;
+  border-radius: 6px;
+  margin: 10px 0;
+  position: relative;
+}
+
+.comment-actions {
+  margin-top: 8px;
+}
+
+.comment button {
+  background: white;
+  border: none;
+  color: var(--second-color);
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.comment button:hover {
+  background-color: var(--second-color);
+  color: var(--third-color);
+}
+
+.reply-box {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+/* Footer CSS */
+
+footer {
+  background: var(--main-color);
+  color: var(--second-color);
+  text-align: center;
+  padding: 20px;
+  margin-top: auto;
+}
+
+.footer-content p {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-btn {
+  padding: 8px 14px;
+  background: var(--third-color);
+  color: var(--second-color);
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.social-btn:hover {
+  background: var(--second-color);
+  color: var(--third-color);
+}
+
+/* You can customize per platform if you like */
+.social-btn.instagram:hover {
+  background: #E1306C;
+  color: white;
+}
+.social-btn.tiktok:hover {
+  background: #010101;
+  color: white;
+}
+.social-btn i {
+  margin-right: 8px;
+  font-size: 18px;
+  vertical-align: middle;
+}
+
+/* Scroll-Top Button CSS */
+
+#scrollTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: var(--second-color);
+  color: var(--third-color);
+  cursor: pointer;
+  padding: 12px;
+  border-radius: 50%;
+  transition: background 0.3s;
+}
+
+#scrollTopBtn:hover {
+  background-color: var(--main-color);
+  color: var(--second-color);
+}

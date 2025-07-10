@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Qalamkar Abdullah | قلمکار عبداللہ</title>
+  <link rel="icon" href="icon.png" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    @font-face {
+      font-family: 'JameelNoori';
+      src: url(JameelNooriNastaleeqRegular.ttf) format('truetype');
+    }
+  </style>
+</head>
+<body>
+  
+  <!-- Header Section -->
+
+  <header>
+    <div class="title">
+      <h3>Qalamkar Abdullah</h3>
+      <h3>قلمکار عبداللہ</h3>
+    </div>
+  </header>
+
+  <!-- Novel Tiles Section -->
+
+  <div class="tiles-container">
+
+    <div class="tile" onclick="location.href='Khushbu ka qarz.html'">
+      <h3>خوشبو کا قرض</h3>
+      <p>Khushbu Ka Qarz</p>
+    </div>
+
+  </div>
+
+  <!-- Comment Section -->
+
+  <div class="comment-section">
+    <h2>Comments</h2>
+    <textarea id="commentInput" placeholder="Write your comment..."></textarea>
+    <button onclick="addComment()">Post</button>
+    <div id="commentsContainer"></div>
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/10.3.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.3.1/firebase-database-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.3.1/firebase-auth-compat.js"></script>
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyDyjmTD2ccDI3sT68pZ7euRuOGJQU9kZGc",
+      authDomain: "novel-website-39bc6.firebaseapp.com",
+      projectId: "novel-website-39bc6",
+      storageBucket: "novel-website-39bc6.firebasestorage.app",
+      messagingSenderId: "625649458560",
+      appId: "1:625649458560:web:b6e9d693e022f47ef3f565",
+      measurementId: "G-V6G36Z7ENM"
+    };
+      firebase.initializeApp(firebaseConfig);
+  </script>
+
+<!-- Footer Section -->
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 Qalamkar Abdullah | قلمکار عبداللہ. All rights reserved.</p>
+        <div class="social-buttons">
+          <a href="https://instagram.com/qalamkarabdullah" target="_blank" class="social-btn instagram">
+            <i class="fab fa-instagram"></i> Instagram
+          </a>
+          <a href="https://tiktok.com/@qalamkar.abdullah" target="_blank" class="social-btn tiktok">
+            <i class="fab fa-tiktok"></i> TikTok
+          </a>
+        </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+  <!-- Scroll Top Button -->
+
+  <button id="scrollTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+</body>
+</html>
